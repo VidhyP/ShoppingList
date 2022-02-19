@@ -21,19 +21,19 @@
         <form method="POST" action="ShoppingList">
             <input type="hidden" name="action" value="add">
 
-            <label for="item">Add item: </label>
-            <input type="text" name="item" >
+            <label for="itembox">Add item: </label>
+            <input type="text" name="item" id="itembox">
 
             <button type="submit">Add</button>
         </form>
 
-        <form>
+        <form method="POST" action="ShoppingList">
             <input type="hidden" name="action" value="delete">
 
             <c:forEach items="${items}" var="item">
                 <p>
-                    <input type="radio" name="item" value="${item}">
-                    ${item}
+                    <input type="radio" name="item" id="${item}" value="${item}">
+                    <label for="${item}">${item}</label>
                 </p>
             </c:forEach>
 

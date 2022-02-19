@@ -18,7 +18,7 @@
             <input type="hidden" name="action" value="register">
 
             <label for="username">Username: </label>
-            <input type="text" name="username">
+            <input type="text" name="username" id="username">
             
             <button type="submit">Register Name</button>
         </form>
